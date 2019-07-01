@@ -15,6 +15,7 @@
 package swagger
 
 import "encoding/json"
+import "github.com/gin-gonic/gin"
 
 // Items represents items from the swagger doc
 type Items struct {
@@ -72,6 +73,9 @@ type Endpoint struct {
 
 	// swagger spec requires security to be an array of objects
 	Security *SecurityRequirement `json:"security,omitempty"`
+	
+	// hacky allows us to attach middleware specific for Gin
+	GinMiddleware []gin.HandlerFunc `json:"-"`
 }
 
 type SecurityRequirement struct {
