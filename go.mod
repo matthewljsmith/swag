@@ -1,4 +1,4 @@
-module github.com/matthewljsmith/m
+module github.com/matthewljsmith/swag/m
 
 go 1.12
 
