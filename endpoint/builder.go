@@ -50,9 +50,9 @@ func Handler(handler interface{}) Option {
 }
 
 // Used specifically for GIN to allow for middlewares to be attached like normal
-func GinMiddleware(handlers ...gin.HandlerFunc) Option {
-	return func(b *Builder){
-		b.Endpoint.GinMiddleware = handlers
+func GinHandlers(handlers ...gin.HandlerFunc) Option {
+	return func(b *Builder) {
+		b.Endpoint.GinHandlers = handlers
 	}
 }
 

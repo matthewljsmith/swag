@@ -73,9 +73,9 @@ type Endpoint struct {
 
 	// swagger spec requires security to be an array of objects
 	Security *SecurityRequirement `json:"security,omitempty"`
-	
+
 	// hacky allows us to attach middleware specific for Gin
-	GinMiddleware []gin.HandlerFunc `json:"-"`
+	GinHandlers []gin.HandlerFunc `json:"-"`
 }
 
 type SecurityRequirement struct {
