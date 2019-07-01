@@ -20,6 +20,7 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/gin-gonic/gin"
 	"github.com/savaki/swag/swagger"
 )
 
@@ -45,6 +46,13 @@ func Handler(handler interface{}) Option {
 			handler = http.HandlerFunc(v)
 		}
 		b.Endpoint.Handler = handler
+	}
+}
+
+// Used specifically for GIN to allow for middlewares to be attached like normal
+func GinMiddleware(handlers ...gin.HandlerFunc) Option {
+	return func(b *Builder){
+		b.Endpoint.GinMiddleware = handlers
 	}
 }
 
