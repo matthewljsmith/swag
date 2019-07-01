@@ -21,7 +21,7 @@ import (
 	"strings"
 
 	"github.com/gin-gonic/gin"
-	"github.com/savaki/swag/swagger"
+	"github.com/matthewljsmith/swag/swagger"
 )
 
 // Builder uses the builder pattern to generate swagger endpoint definitions

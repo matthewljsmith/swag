@@ -19,9 +19,9 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/savaki/swag"
-	"github.com/savaki/swag/endpoint"
-	"github.com/savaki/swag/swagger"
+	"github.com/matthewljsmith/swag"
+	"github.com/matthewljsmith/swag/endpoint"
+	"github.com/matthewljsmith/swag/swagger"
 )
 
 func handle(w http.ResponseWriter, _ *http.Request) {

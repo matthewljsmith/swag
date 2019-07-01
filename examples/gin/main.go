@@ -19,9 +19,9 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/savaki/swag"
-	"github.com/savaki/swag/endpoint"
-	"github.com/savaki/swag/swagger"
+	"github.com/matthewljsmith/swag"
+	"github.com/matthewljsmith/swag/endpoint"
+	"github.com/matthewljsmith/swag/swagger"
 )
 
 func handle(c *gin.Context) {

@@ -19,9 +19,9 @@ import (
 	"strings"
 
 	"github.com/labstack/echo"
-	"github.com/savaki/swag"
-	"github.com/savaki/swag/endpoint"
-	"github.com/savaki/swag/swagger"
+	"github.com/matthewljsmith/swag"
+	"github.com/matthewljsmith/swag/endpoint"
+	"github.com/matthewljsmith/swag/swagger"
 )
 
 func handle(c echo.Context) error {
